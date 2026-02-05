@@ -3,16 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <title>Paules23 | Game Developer</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>Paules23</h1>
-    <h2>Game Designer & Programmer</h2>
 
-    <p>
-        Graduated in Game Design and Development at CITM (English program).
-    </p>
+    <!-- TITLE / HERO -->
+    <header id="title">
+        <h1>Paules23</h1>
+        <h2>Game Designer & Gameplay Programmer</h2>
+        <p>Focused on gameplay systems and player experience</p>
 
-    <script src="script.js"></script>
+        <a href="#featured-projects">View Projects</a>
+    </header>
+
+    <!-- ABOUT ME -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Game Design and Development graduate from CITM (English program),
+            focused on gameplay programming and game design.
+        </p>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section id="featured-projects">
+        <h2>Featured Projects</h2>
+
+        <div class="slider">
+
+            <button class="arrow left">←</button>
+
+            <div class="slides">
+
+                <article class="slide">
+                    <img src="assets/gifs/project1.gif" alt="Project 1 gif">
+                    <h3>Project Title 1</h3>
+                    <p>Short description of the project and your role.</p>
+                    <a href="project.html">More info</a>
+                </article>
+
+                <article class="slide">
+                    <img src="assets/gifs/project2.gif" alt="Project 2 gif">
+                    <h3>Project Title 2</h3>
+                    <p>Short description of the project and your role.</p>
+                    <a href="project.html">More info</a>
+                </article>
+
+                <article class="slide">
+                    <img src="assets/gifs/project3.gif" alt="Project 3 gif">
+                    <h3>Project Title 3</h3>
+                    <p>Short description of the project and your role.</p>
+                    <a href="project.html">More info</a>
+                </article>
+
+            </div>
+
+            <button class="arrow right">→</button>
+
+        </div>
+    </section>
+
+    <!-- ALL PROJECTS PREVIEW -->
+    <section id="all-projects-preview">
+        <h2>All Projects</h2>
+        <p>Full list of games, prototypes and experiments.</p>
+        <a href="projects.html">View all projects</a>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>
+            Game Design and Development Degree – CITM (UPC)
+        </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li><a href="https://github.com/Paules23">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="mailto:yourmail@email.com">Email</a></li>
+        </ul>
+    </section>
+
+    <!-- JS -->
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>

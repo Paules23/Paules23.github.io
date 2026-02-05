@@ -20,10 +20,8 @@ body {
     background-color: var(--bg-color);
     color: var(--text-main);
     line-height: 1.6;
-
-    display: flex;
-    justify-content: center;
 }
+
 
 /* CONTENEDOR CENTRAL */
 body > * {
@@ -96,23 +94,20 @@ a:active, button:active {
     background-color: var(--bg-secondary);
 }
 
-/* CONTENEDOR DEL SLIDER */
+/* Slider */
 .slider {
     position: relative;
     overflow: hidden;
 }
 
-/* FILA DE SLIDES */
 .slides {
     display: flex;
-    transition: transform 0.4s ease;
+    transition: transform 0.4s ease-in-out;
 }
 
-/* CADA SLIDE */
 .slide {
     min-width: 100%;
     padding: 40px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,24 +120,35 @@ a:active, button:active {
     margin-bottom: 20px;
 }
 
-/* FLECHAS */
+/* Flechas */
 .arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
     background-color: var(--accent);
     color: var(--bg-color);
-
     font-size: 1.5rem;
     padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+
+    z-index: 10; /* IMPORTANTE: asegura que la flecha esté sobre las slides */
 }
 
-.arrow.left {
-    left: 10px;
+.arrow:hover {
+    background-color: #52d3aa; /* cambio de color */
 }
 
-.arrow.right {
-    right: 10px;
+.arrow:active {
+    transform: scale(0.9);
 }
 
+.arrow.left { left: 10px; }
+.arrow.right { right: 10px; }
+
+.arrow:disabled {
+    opacity: 0.3;
+    cursor: default;
+}

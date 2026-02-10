@@ -22,7 +22,6 @@ body {
     line-height: 1.6;
 }
 
-
 /* CONTENEDOR CENTRAL */
 body > * {
     width: 100%;
@@ -71,6 +70,7 @@ a:active, button:active {
     box-shadow: none;
 }
 
+/* OLD TITLE SECTION (not used now, but kept just in case)
 #title {
     text-align: center;
 }
@@ -88,6 +88,7 @@ a:active, button:active {
     color: var(--text-secondary);
     margin: 20px 0 40px;
 }
+*/
 
 /* FEATURED PROJECTS */
 #featured-projects {
@@ -151,4 +152,210 @@ a:active, button:active {
 .arrow:disabled {
     opacity: 0.3;
     cursor: default;
+}
+
+/* ---------------------------
+   NEW: TOPBAR + PROJECTS GRID
+---------------------------- */
+
+/* --- TOPBAR layout like mockup --- */
+#topbar {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.avatar {
+  width: 270px;
+  height: 270px;
+  border-radius: 18px;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
+
+.topbar-content h1 {
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+
+.topbar-content h2 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.topbar-content p {
+  color: var(--text-secondary);
+  margin-bottom: 18px;
+  max-width: 520px;
+}
+
+/* 4 columns grid:
+   [github] [linkedin] [mail/phone icon] [text]
+*/
+.contact-grid {
+  display: grid;
+  grid-template-columns: 44px 44px 44px auto;
+  gap: 10px 10px;
+  align-items: center;
+}
+
+/* Clickable square icons (GitHub/LinkedIn) */
+.icon-btn {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Non-clickable square icons (mail/phone) */
+.icon-static {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-static img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Text next to mail/phone */
+.contact-text {
+  color: var(--text-main);
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+/* Mobile tweak */
+@media (max-width: 640px) {
+  #topbar {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .avatar {
+    width: 180px;
+    height: 180px;
+  }
+
+  .contact-grid {
+  display: grid;
+  grid-template-columns: 44px 44px auto;
+  grid-auto-flow: row;
+  column-gap: 12px;
+  row-gap: 10px;
+  align-items: center;
+}
+}
+
+/* --- FEATURED PROJECTS links --- */
+.project-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+    justify-content: center;
+}
+
+.project-desc {
+    max-width: 850px;
+}
+
+/* --- ALL PROJECTS GRID --- */
+#all-projects {
+    background-color: var(--bg-secondary);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.project-card {
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-card .short-desc {
+    color: var(--text-secondary);
+}
+
+.project-card .more-content {
+    display: none;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.project-card.expanded .more-content {
+    display: flex;
+}
+
+.project-card .know-more {
+    align-self: flex-start;
+}
+
+/* Load more */
+.load-more-wrap {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+    #topbar { flex-direction: column; align-items: flex-start; }
+    .projects-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------------------------
+   Slider without animation
+---------------------------- */
+#featured-projects .slides {
+    transition: none;
+}
+
+/* Arrows without animation */
+#featured-projects .arrow {
+    transition: none;
+}
+
+#featured-projects .arrow:hover,
+#featured-projects .arrow:active {
+    transform: translateY(-50%);
+    box-shadow: none;
 }

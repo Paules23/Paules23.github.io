@@ -9,14 +9,44 @@
 </head>
 <body>
 
-    <!-- TITLE / HERO -->
-    <header id="title">
-        <h1>Pau Vivas Zamora</h1>
-        <h2>Game Designer & Gameplay Programmer</h2>
-        <p>Focused on gameplay systems and player experience</p>
+    <!-- TOP BAR / HERO -->
+    <header id="topbar">
+  <img class="avatar" src="assets/images/profile.jpg" alt="Pau profile photo">
 
-        <a href="#featured-projects">View Projects</a>
-    </header>
+  <div class="topbar-content">
+    <h1>Pau Vivas Zamora</h1>
+    <h2>Game Designer & Gameplay Programmer</h2>
+    <p>Focused on gameplay systems and player experience</p>
+
+    <!-- Contact grid (as in your mockup) -->
+    <div class="contact-grid">
+      <!-- Row 1: social icons + mail -->
+      <a class="icon-btn" href="https://github.com/Paules23" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="assets/icons/github.svg" alt="">
+      </a>
+
+      <div class="icon-static" aria-hidden="true">
+        <img src="assets/icons/mail.svg" alt="">
+      </div>
+
+      <span class="contact-text">yourmail@email.com</span>
+
+      <!-- Row 2: empty spaces to align under the mail icon -->
+      <div></div>
+
+      <a class="icon-btn" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="assets/icons/linkedin.svg" alt="">
+      </a>
+
+      <div class="icon-static" aria-hidden="true">
+        <img src="assets/icons/phone.svg" alt="">
+      </div>
+
+      <span class="contact-text">+34 123 456 789</span>
+    </div>
+  </div>
+</header>
+
 
     <!-- ABOUT ME -->
     <section id="about">
@@ -29,45 +59,171 @@
 
     <!-- FEATURED PROJECTS -->
     <section id="featured-projects">
-    <h2>Featured Projects</h2>
+        <h2>Featured Projects</h2>
 
-    <div class="slider">
+        <div class="slider">
 
-        <!-- Flecha izquierda -->
-        <button class="arrow left">←</button>
+            <!-- Flecha izquierda -->
+            <button class="arrow left" type="button">←</button>
 
-        <!-- Contenedor de slides -->
-        <div class="slides">
-            <article class="slide">
-                <img src="assets/gifs/Alien_ Nemesis Trailer.gif" alt="Project 1 gif">
-                <h3>Alien Nemesis</h3>
-                <p>We created a diablo like game with our own engine in which I designed the main weapons and abilities aswell as the boss.</p>
-                <a href="project.html">More info</a>
-            </article>
-            <article class="slide">
-                <img src="assets/gifs/project2.gif" alt="Project 2 gif">
-                <h3>Project Title 2</h3>
-                <p>Short description of the project and your role.</p>
-                <a href="project.html">More info</a>
-            </article>
-            <article class="slide">
-                <img src="assets/gifs/project3.gif" alt="Project 3 gif">
-                <h3>Project Title 3</h3>
-                <p>Short description of the project and your role.</p>
-                <a href="project.html">More info</a>
-            </article>
+            <!-- Contenedor de slides -->
+            <div class="slides">
+
+                <article class="slide">
+                    <img src="assets/gifs/Alien_ Nemesis Trailer.gif" alt="Alien Nemesis gif">
+                    <h3>Alien Nemesis</h3>
+
+                    <p class="project-desc">
+                        We created a diablo-like game with our own engine. I designed the main weapons,
+                        abilities, and the boss encounter. I also worked on balancing and feel.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener">Website</a>
+                        <a href="#" target="_blank" rel="noopener">Contribution</a>
+                        <a href="#" target="_blank" rel="noopener">Download</a>
+                    </div>
+                </article>
+
+                <article class="slide">
+                    <img src="assets/gifs/project2.gif" alt="Project 2 gif">
+                    <h3>Project Title 2</h3>
+
+                    <p class="project-desc">
+                        Short description of the project and your role. Expand this text so it looks good
+                        with a longer paragraph.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener">Website</a>
+                        <a href="#" target="_blank" rel="noopener">Contribution</a>
+                        <a href="#" target="_blank" rel="noopener">Download</a>
+                    </div>
+                </article>
+
+                <article class="slide">
+                    <img src="assets/gifs/project3.gif" alt="Project 3 gif">
+                    <h3>Project Title 3</h3>
+
+                    <p class="project-desc">
+                        Short description of the project and your role. Expand this text so it looks good
+                        with a longer paragraph.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener">Website</a>
+                        <a href="#" target="_blank" rel="noopener">Contribution</a>
+                        <a href="#" target="_blank" rel="noopener">Download</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Flecha derecha -->
+            <button class="arrow right" type="button">→</button>
         </div>
-        <!-- Flecha derecha -->
-        <button class="arrow right">→</button>
-    </div>
-</section>
+    </section>
 
-
-    <!-- ALL PROJECTS PREVIEW -->
-    <section id="all-projects-preview">
+    <!-- ALL PROJECTS (GRID) -->
+    <section id="all-projects">
         <h2>All Projects</h2>
         <p>Full list of games, prototypes and experiments.</p>
-        <a href="projects.html">View all projects</a>
+
+        <div class="projects-grid">
+
+            <!-- PROJECT CARD (example) -->
+            <article class="project-card" data-expanded="false">
+                <img src="assets/images/project1.jpg" alt="Project 1 image">
+                <h3>Project Title 1</h3>
+
+                <p class="short-desc">Small one-liner about the project.</p>
+
+                <div class="more-content">
+                    <p class="long-desc">
+                        Longer description that appears when clicking "Know more".
+                        Add your role, what you built, challenges, results, etc.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener">Website</a>
+                        <a href="#" target="_blank" rel="noopener">Contribution</a>
+                        <a href="#" target="_blank" rel="noopener">Download</a>
+                    </div>
+                </div>
+
+                <button class="know-more" type="button">Know more</button>
+            </article>
+
+            <article class="project-card" data-expanded="false">
+                <img src="assets/images/project2.jpg" alt="Project 2 image">
+                <h3>Project Title 2</h3>
+
+                <p class="short-desc">Small one-liner about the project.</p>
+
+                <div class="more-content">
+                    <p class="long-desc">
+                        Longer description…
+                    </p>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener">Website</a>
+                        <a href="#" target="_blank" rel="noopener">Contribution</a>
+                        <a href="#" target="_blank" rel="noopener">Download</a>
+                    </div>
+                </div>
+
+                <button class="know-more" type="button">Know more</button>
+            </article>
+
+            <article class="project-card" data-expanded="false">
+                <img src="assets/images/project3.jpg" alt="Project 3 image">
+                <h3>Project Title 3</h3>
+
+                <p class="short-desc">Small one-liner about the project.</p>
+
+                <div class="more-content">
+                    <p class="long-desc">
+                        Longer description…
+                    </p>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener">Website</a>
+                        <a href="#" target="_blank" rel="noopener">Contribution</a>
+                        <a href="#" target="_blank" rel="noopener">Download</a>
+                    </div>
+                </div>
+
+                <button class="know-more" type="button">Know more</button>
+            </article>
+
+            <article class="project-card" data-expanded="false">
+                <img src="assets/images/project4.jpg" alt="Project 4 image">
+                <h3>Project Title 4</h3>
+
+                <p class="short-desc">Small one-liner about the project.</p>
+
+                <div class="more-content">
+                    <p class="long-desc">
+                        Longer description…
+                    </p>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener">Website</a>
+                        <a href="#" target="_blank" rel="noopener">Contribution</a>
+                        <a href="#" target="_blank" rel="noopener">Download</a>
+                    </div>
+                </div>
+
+                <button class="know-more" type="button">Know more</button>
+            </article>
+
+            <!-- Add more cards below (they will be hidden until "Load more") -->
+
+        </div>
+
+        <div class="load-more-wrap">
+  <button id="showMoreProjects" type="button">Show more</button>
+</div>
     </section>
 
     <!-- EXPERIENCE -->
@@ -92,7 +248,5 @@
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
 
-
 </body>
-
 </html>

@@ -14,9 +14,15 @@
   <img class="avatar" src="assets/images/profile.jpg" alt="Pau profile photo">
 
   <div class="topbar-content">
-    <h1>Pau Vivas Zamora</h1>
-    <h2>Game Designer & Gameplay Programmer</h2>
-    <p>Focused on gameplay systems and player experience</p>
+    <div class="name-row">
+  <h1>Pau Vivas Zamora</h1>
+
+  <a class="cv-btn" href="assets/cv/Pau_Vivas_CV.pdf" download>
+    Download CV
+  </a>
+</div>
+    <h2>Gameplay Programmer & Game Designer</h2>
+
 
     <!-- Contact grid (as in your mockup) -->
     <div class="contact-grid">
@@ -29,12 +35,12 @@
         <img src="assets/icons/mail.svg" alt="">
       </div>
 
-      <span class="contact-text">yourmail@email.com</span>
+      <span class="contact-text">pauvz123@gmail.com</span>
 
       <!-- Row 2: empty spaces to align under the mail icon -->
       <div></div>
 
-      <a class="icon-btn" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <a class="icon-btn" href="https://www.linkedin.com/in/pau-vivas-zamora-b29205168/" target="_blank" rel="noopener" aria-label="LinkedIn">
         <img src="assets/icons/linkedin.svg" alt="">
       </a>
 
@@ -42,7 +48,7 @@
         <img src="assets/icons/phone.svg" alt="">
       </div>
 
-      <span class="contact-text">+34 123 456 789</span>
+      <span class="contact-text">(+34) 664 237 189</span>
     </div>
   </div>
 </header>
@@ -50,12 +56,21 @@
 
     <!-- ABOUT ME -->
     <section id="about">
-        <h2>About Me</h2> 
-        <p>
-            Game Design and Development graduate from CITM (English program),
-            focused on gameplay programming and game design.
-        </p>
-    </section>
+  <h2>About Me</h2>
+
+  <p>
+    I’ve been passionate about video games since I was a kid, and working in the game
+    industry has always been my goal. I’m a <strong>Game Design and Development graduate</strong>
+    from CITM–UPC, with a profile mainly <strong>focused on programming</strong>, especially
+    gameplay systems, combined with a strong interest in game design.
+  </p>
+
+  <p>
+    I enjoy turning ideas into playable features and working closely with
+    multidisciplinary teams. I’m a communicative, motivated, and responsible person,
+    always eager to keep learning and growing as a game developer.
+  </p>
+</section>
 
     <!-- FEATURED PROJECTS -->
     <section id="featured-projects">
@@ -74,46 +89,43 @@
                     <h3>Alien Nemesis</h3>
 
                     <p class="project-desc">
-                        We created a diablo-like game with our own engine. I designed the main weapons,
-                        abilities, and the boss encounter. I also worked on balancing and feel.
+                        Me alongside with 22 of my colleagues we created a diablo-like game using our own engine. I designed the main weapons,
+                        abilities, and the boss encounter. I also worked on balancing and game feel.
                     </p>
 
                     <div class="project-links">
-                        <a href="#" target="_blank" rel="noopener">Website</a>
-                        <a href="#" target="_blank" rel="noopener">Contribution</a>
-                        <a href="#" target="_blank" rel="noopener">Download</a>
+                        <a href="https://shadow-wizard-games.github.io/Alien-Nemesis-Website/index.html" target="_blank" rel="noopener">Website</a>
+                        <a href="https://shadow-wizard-games.github.io/Alien-Nemesis-Website/PauVivas.html" target="_blank" rel="noopener">Contribution</a>
                     </div>
                 </article>
 
                 <article class="slide">
                     <img src="assets/gifs/project2.gif" alt="Project 2 gif">
-                    <h3>Project Title 2</h3>
+                    <h3>The Kopfbrecher Test</h3>
 
                     <p class="project-desc">
-                        Short description of the project and your role. Expand this text so it looks good
-                        with a longer paragraph.
+                        We developed a VR game in unity with 2 colleagues. I did the whole technical part aswell as the main idea.
+                        The Kopfbrecher test consists of a simple game based on 5 minigames + a surprise at the end. During these tests there is an AI (CAIn) that will help (or not) the player to complete the tests. 
                     </p>
 
                     <div class="project-links">
-                        <a href="#" target="_blank" rel="noopener">Website</a>
-                        <a href="#" target="_blank" rel="noopener">Contribution</a>
-                        <a href="#" target="_blank" rel="noopener">Download</a>
+                        <a href="https://www.youtube.com/results?search_query=the+kopfbrecher+test" target="_blank" rel="noopener">Trailer</a>
+                        <a href="https://github.com/RegalonaManda/VRFinal_Project" target="_blank" rel="noopener">Download</a>
                     </div>
                 </article>
 
                 <article class="slide">
                     <img src="assets/gifs/project3.gif" alt="Project 3 gif">
-                    <h3>Project Title 3</h3>
+                    <h3>Smol Engine</h3>
 
                     <p class="project-desc">
-                        Short description of the project and your role. Expand this text so it looks good
-                        with a longer paragraph.
+                        Me and a colleague created a 3D engine using C++ and different libraries, such as SDL2, OpenGL, GLEW, GML, imGui.
+
+                        It was designed with a workflow similar to Unity’s, providing tools to manage game object behaviour, scene data saving, and intuitive camera navigation. It supports importing 3D models and textures, and includes a fully integrated audio system based on Wwise, using dedicated listener and source components.
                     </p>
 
                     <div class="project-links">
-                        <a href="#" target="_blank" rel="noopener">Website</a>
-                        <a href="#" target="_blank" rel="noopener">Contribution</a>
-                        <a href="#" target="_blank" rel="noopener">Download</a>
+                        <a href="https://github.com/CITM-UPC/smolEngine/tree/AudioEngineProject" target="_blank" rel="noopener">Download</a>
                     </div>
                 </article>
 
@@ -217,31 +229,34 @@
                 <button class="know-more" type="button">Know more</button>
             </article>
 
+            <article class="project-card" data-expanded="false">
+                <img src="assets/images/project4.jpg" alt="Project 4 image">
+                <h3>Project Title 4</h3>
+
+                <p class="short-desc">Small one-liner about the project.</p>
+
+                <div class="more-content">
+                    <p class="long-desc">
+                        Longer description…
+                    </p>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener">Website</a>
+                        <a href="#" target="_blank" rel="noopener">Contribution</a>
+                        <a href="#" target="_blank" rel="noopener">Download</a>
+                    </div>
+                </div>
+
+                <button class="know-more" type="button">Know more</button>
+            </article>
+
             <!-- Add more cards below (they will be hidden until "Load more") -->
 
         </div>
 
         <div class="load-more-wrap">
-  <button id="showMoreProjects" type="button">Show more</button>
+  <button id="showMoreProjects">Show more</button>
 </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <p>
-            Game Design and Development Degree – CITM (UPC)
-        </p>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <ul>
-            <li><a href="https://github.com/Paules23">GitHub</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="mailto:yourmail@email.com">Email</a></li>
-        </ul>
     </section>
 
     <!-- JS -->

@@ -102,15 +102,17 @@
                     </div>
                 </article>
 
+                <!-- ✅ FIXED: single slide, video styled like the others -->
                 <article class="slide">
-                    <article class="slide">
-                    <video 
-                    src="assets/gifs/Breaking_Cats.mp4" 
-                    autoplay 
-                    muted 
-                    loop 
-                    playsinline>
-                    </video>
+                    <video
+                      class="slide-media"
+                      src="assets/gifs/Breaking_Cats.mp4"
+                      autoplay
+                      muted
+                      loop
+                      playsinline
+                    ></video>
+
                     <h3>Breaking Cats</h3>
                     <p class="project-desc">
                         In a team of 8 we created a 2D RPG from scratch using c++, VS studio, tiled and sdl 2. I worked in programming the game alongside two of my colleagues and also designed big part of the story. Breaking Cats is a 2D rpg game where everything is just… cats! You must explore different worlds to accomplish the revenge by killing The Dog.
@@ -132,8 +134,6 @@
 
         <div class="projects-grid">
             <article class="project-card" data-expanded="false">
-                <!-- Add data-gallery with multiple images if you want, e.g.:
-                     data-gallery="assets/images/project1.png,assets/images/project1_2.png" -->
                 <img src="assets/images/project1.png" alt="Smol Engine image">
                 <h3>Smol Engine</h3>
 
@@ -142,7 +142,6 @@
                 <div class="more-content">
                     <p class="long-desc">
                         Me and a colleague created a 3D engine using C++ and different libraries, such as SDL2, OpenGL, GLEW, GML, imGui.
-
                         It was designed with a workflow similar to Unity’s, providing tools to manage game object behaviour, scene data saving, and intuitive camera navigation. It supports importing 3D models and textures, and includes a fully integrated audio system based on Wwise, using dedicated listener and source components.
                     </p>
 
@@ -177,7 +176,8 @@
             </article>
 
             <article class="project-card" data-expanded="false">
-                <img src="assets/images/project3.jpg" alt="Mobile App image"
+                <img
+                    src="assets/images/project3.jpg"
                     data-gallery="assets/images/project3.jpg,assets/images/project3b.jpg,assets/images/project3c.jpg,assets/images/project3d.jpg"
                     alt="Mobile App image">
                 <h3>Mobile App</h3>
@@ -186,7 +186,7 @@
 
                 <div class="more-content">
                     <p class="long-desc">
-                        Me and a colleague created a mobile app that allowed you to score, save and search games using a steam api to retrieve the information from all steam games. 
+                        Me and a colleague created a mobile app that allowed you to score, save and search games using a steam api to retrieve the information from all steam games.
                     </p>
 
                     <div class="project-links">
@@ -198,16 +198,17 @@
             </article>
 
             <article class="project-card" data-expanded="false">
-                <img src="assets/images/project4.png" alt="3D environment image"
-                    data-gallery="assets/images/project4.png,assets/images/project4b.png,assets/images/project4c.png"
-                    alt="3D project image">
+                <img
+                  src="assets/images/project4.png"
+                  data-gallery="assets/images/project4.png,assets/images/project4b.png,assets/images/project4c.png"
+                  alt="3D environment image">
                 <h3>3D environment</h3>
 
                 <p class="short-desc">I created a 3D house in unity</p>
 
                 <div class="more-content">
                     <p class="long-desc">
-                        In this project I learned to do an scenario using maya, zbrush, substance painter and unity. Did modular 3D peaces aswell as shaders, particles, lights and the terrain  tool to create a 3D environment.
+                        In this project I learned to do an scenario using maya, zbrush, substance painter and unity. Did modular 3D peaces aswell as shaders, particles, lights and the terrain tool to create a 3D environment.
                     </p>
 
                     <div class="project-links">
@@ -219,9 +220,10 @@
             </article>
 
             <article class="project-card" data-expanded="false">
-                <img src="assets/images/project5.jpg" alt="Project image"
-                    data-gallery="assets/images/project5.jpg,assets/images/project5b.jpg,assets/images/project5c.jpg,assets/images/project5d.jpg"
-                    alt="Gato Waton Adventures image">
+                <img
+                  src="assets/images/project5.jpg"
+                  data-gallery="assets/images/project5.jpg,assets/images/project5b.jpg,assets/images/project5c.jpg,assets/images/project5d.jpg"
+                  alt="Guerrilla war tribute image">
                 <h3>Guerrilla war tribute</h3>
 
                 <p class="short-desc">in a group of 4 we recreated the mythical guerrilla war arcade game</p>
@@ -247,7 +249,7 @@
         </div>
     </section>
 
-    <!-- LIGHTBOX (updated: stage wrapper so images never crop) -->
+    <!-- LIGHTBOX -->
     <div id="lightbox" class="lightbox" aria-hidden="true">
       <div class="lightbox-backdrop" data-close="true"></div>
 

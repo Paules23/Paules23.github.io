@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextButton = document.querySelector(".arrow.right");
 
     let currentIndex = 0;
-    const loop = false; // Cambia a true si quieres loop infinito
+    const loop = false; // Cambiar a true si quiero loop infinito
 
     function updateSlider() {
         slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
